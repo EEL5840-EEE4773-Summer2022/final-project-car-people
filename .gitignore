@@ -1,0 +1,6 @@
+
+labels_train.npy
+data_train.npy
+25_epoch_run.h5
+15_epoch_run.h5
+10_epoch_run.h5

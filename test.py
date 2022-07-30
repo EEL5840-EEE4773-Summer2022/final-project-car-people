@@ -12,7 +12,7 @@ from tensorflow.keras.applications.inception_v3 import InceptionV3
 IMPORT_DATA_FILENAME = 'example_training.npy'
 IMPORT_LABELS_FILENAME = 'example_labels.npy'
 H5_INPUT_FILENAME = 'inception_v3_trained.h5'
-PREDICTED_LABEL_OUTPUT_FILENAME = 'hard_predicted_labels.npy'
+PREDICTED_LABEL_OUTPUT_FILENAME = 'predicted_labels.npy'
 THRESHOLD = 0
 # Threshold set to zero as this will not test for unknown classes
 

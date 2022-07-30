@@ -14,6 +14,8 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 # Set Constants of the model
 BATCH_SIZE = 64
 H5_OUPUT_FILENAME = "inception_v3_trained.h5"
+IMPORT_DATA_FILENAME = 'data_train.npy'
+IMPORT_LABELS_FILENAME = 'labels_train.npy'
 MAX_EPOCHS = 150
 PATIENCE = 10
 
@@ -43,8 +45,8 @@ def translate_all(np_array):
 
 #-----------Data Preparation-----------#
 # Import the data
-data_train = np.load('data_train.npy').transpose()
-labels_train = np.load('labels_train.npy')
+data_train = np.load(IMPORT_DATA_FILENAME).transpose()
+labels_train = np.load(IMPORT_LABELS_FILENAME)
 
 # Reshape the data into 300x300xRGB images
 data_train = np.array([i.reshape(300,300,3) for i in data_train])

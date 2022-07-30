@@ -4,8 +4,8 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.keras.optimizers import SGD
 from sklearn.model_selection import train_test_split
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.applications.inception_v3 import InceptionV3
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 #-----------Training Setup-----------#
 # Prevent CUDA from using GPU as it will crash on the development PC

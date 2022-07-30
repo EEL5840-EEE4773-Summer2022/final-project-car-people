@@ -13,8 +13,10 @@ IMPORT_DATA_FILENAME = 'example_training.npy'
 IMPORT_LABELS_FILENAME = 'example_labels.npy'
 H5_INPUT_FILENAME = 'inception_v3_trained.h5'
 PREDICTED_LABEL_OUTPUT_FILENAME = 'hard_predicted_labels.npy'
-THRESHOLD = 0
-# Threshold set to zero as this will not test for unknown classes
+THRESHOLD = 0.8071025020177562 
+# THRESHOLD was calculated using training data to determine the minimum single ...
+# class confidence level that captures > 90% of correctly graded classes
+
 
 #-----------Helper Methods-----------#
 # Breaks down a list of integer values into a one-hot like format

@@ -32,7 +32,7 @@ def one_hot_training(np_array):
 def one_hot_translator(np_array):
     max_index = np.argmax(np_array)
     max_value = np.max(np_array)
-    if max_value <= THRESHOLD:
+    if max_value < THRESHOLD:
         return -1
     return max_index
 

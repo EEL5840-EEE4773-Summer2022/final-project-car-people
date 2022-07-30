@@ -13,7 +13,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 # Set Constants of the model
 BATCH_SIZE = 64
-H5_OUPUT_FILENAME = "inception_v3_trained.h5"
+H5_OUTPUT_FILENAME = "inception_v3_trained.h5"
 IMPORT_DATA_FILENAME = 'data_train.npy'
 IMPORT_LABELS_FILENAME = 'labels_train.npy'
 MAX_EPOCHS = 150
@@ -85,7 +85,7 @@ for layer in inception.layers:
 
 # Create output layers that will be trained on the data
 x = tf.keras.layers.Flatten()(inception.output)
-x = tf.keras.layers.Dense(1024, activation="relu")(x)
+x = tf.keras.layers.Dense(1024, activation='relu')(x)
 x = tf.keras.layers.Dropout(0.15)(x)
 x = tf.keras.layers.Dense(10, activation='softmax')(x)
 
@@ -102,6 +102,5 @@ model.compile(optimizer = optimizer,
 # Train the model
 # Model stops training ~113 Epochs
 early_stop = tf.keras.callbacks.EarlyStopping(monitor='acc', mode='max', verbose=1, patience=PATIENCE)
-callbacks = tf.keras.callbacks.Callback()
 history = model.fit(train_generator, epochs=MAX_EPOCHS, batch_size=BATCH_SIZE, callbacks=[early_stop])
-model.save(H5_OUPUT_FILENAME)
+model.save(H5_OUTPUT_FILENAME)

@@ -9,7 +9,8 @@
   </p>
 </p>
 
-
+# Car People Final Project
+# Authors Michelle Dupuis & Everett Periman
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -29,8 +30,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#authors">Authors</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -56,9 +55,13 @@ In this section you should provide instructions on how to use this repository to
 ### Dependencies
 
 Python >= 3.10.2
+
 tensorflow == 2.9.1
+
 scikit-learn == 1.1.1
+
 numpy == 1.22.3
+
 
 
 
@@ -141,7 +144,7 @@ THRESHOLD = 0
    ### hard_test.py: This is a procedural Python script that will test the performance of the model on the HARD dataset. This script will print the accuracy and predicted labels to the terminal and the predicted labels will also be stored in the PREDICTED_LABEL_OUTPUT_FILENAME file.
 To run the script use this command line
 ```sh
-python test.py
+python hard_test.py
   ```
  The data and label input files can be changed with the following variables at the top of the script
  ```sh

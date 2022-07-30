@@ -1,0 +1,4 @@
+name: fml
+channels:
+  - defaults
+prefix: C:\Users\evere\anaconda3\envs\fml\envs\fml

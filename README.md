@@ -97,7 +97,7 @@ conda activate fml
   ``` 
 3. Install required dependencies either manually or by running
 ```sh
-pip install -r requirements.txt
+python -m pip install tensorflow
   ```
   
 <!-- USAGE EXAMPLES -->

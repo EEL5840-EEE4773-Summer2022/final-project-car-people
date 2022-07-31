@@ -13,7 +13,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 # Set Constants of the model
 BATCH_SIZE = 64
-H5_OUTPUT_FILENAME = "inception_v3_trained_testpy.h5"
+H5_OUTPUT_FILENAME = 'inception_v3_trained.h5'
 IMPORT_DATA_FILENAME = 'data_train.npy'
 IMPORT_LABELS_FILENAME = 'labels_train.npy'
 MAX_EPOCHS = 1000

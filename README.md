@@ -164,7 +164,7 @@ PREDICTED_LABEL_OUTPUT_FILENAME = 'hard_predicted_labels.npy'
   ```
  The THRESHOLD value should NOT be altered.
 ```sh
-THRESHOLD = 0.8071025020177562 
+THRESHOLD = 0.7071025020177562 
   ```
 <!-- LICENSE -->
 ## License

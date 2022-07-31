@@ -69,10 +69,6 @@ numpy == 1.22.3
 
 requirements.txt is included for easier importing of the required python packages into your workspace
 enviroment.yaml is included for easier importing of the conda env into your workspace
-
-```sh
-pip install -r requirements.txt
-  ```
   
 ```sh
 conda env create -f enviroment.yml

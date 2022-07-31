@@ -13,11 +13,11 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 # Set Constants of the model
 BATCH_SIZE = 64
-H5_OUTPUT_FILENAME = "inception_v3_trained.h5"
+H5_OUTPUT_FILENAME = "inception_v3_trained_testpy.h5"
 IMPORT_DATA_FILENAME = 'data_train.npy'
 IMPORT_LABELS_FILENAME = 'labels_train.npy'
-MAX_EPOCHS = 150
-PATIENCE = 10
+MAX_EPOCHS = 1000
+PATIENCE = 15
 
 #-----------Helper Methods-----------#
 # Breaks down a list of integer values into a one-hot like format
@@ -101,6 +101,7 @@ model.compile(optimizer = optimizer,
 
 # Train the model
 # Model stops training ~113 Epochs
-early_stop = tf.keras.callbacks.EarlyStopping(monitor='acc', mode='max', verbose=1, patience=PATIENCE)
-history = model.fit(train_generator, epochs=MAX_EPOCHS, batch_size=BATCH_SIZE, callbacks=[early_stop])
+checkpoint = tf.keras.callbacks.ModelCheckpoint(filepath=H5_OUTPUT_FILENAME,monitor='loss',verbose=0,save_best_only=True,mode='min')
+early_stop = tf.keras.callbacks.EarlyStopping(monitor='loss', mode='min', verbose=1, patience=PATIENCE)
+history = model.fit(train_generator, epochs=MAX_EPOCHS, batch_size=BATCH_SIZE, callbacks=[early_stop, checkpoint])
 model.save(H5_OUTPUT_FILENAME)

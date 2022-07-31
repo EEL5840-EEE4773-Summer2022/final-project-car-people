@@ -84,7 +84,7 @@ conda env create -f enviroment.yml
 git clone https://github.com/EEL5840-EEE4773-Summer2022/final-project-car-people.git
    ```
    
-3. Setup (and activate) your environment
+2. Setup (and activate) your environment
 ```sh
 conda env create -f enviroment.yml
   ```
@@ -92,8 +92,10 @@ conda env create -f enviroment.yml
   ```sh
 conda activate fml
   ```
-  
-4. Install required dependencies either manually or by running
+  ```sh
+ conda install python
+  ``` 
+3. Install required dependencies either manually or by running
 ```sh
 pip install -r requirements.txt
   ```

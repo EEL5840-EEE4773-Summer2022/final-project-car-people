@@ -99,7 +99,12 @@ conda activate fml
 ```sh
 python -m pip install tensorflow
   ```
-  
+ ```sh
+python -m pip install numpy
+  ```
+  ```sh
+python -m pip install scikit-learn
+  ```
 <!-- USAGE EXAMPLES -->
 ## Usage
 

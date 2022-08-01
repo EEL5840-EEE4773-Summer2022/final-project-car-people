@@ -82,7 +82,7 @@ git clone https://github.com/EEL5840-EEE4773-Summer2022/final-project-car-people
    
 2. Setup (and activate) your environment
 ```sh
-conda env create -f enviroment.yml
+conda env create -f environment.yml
   ```
   
   ```sh
@@ -125,7 +125,7 @@ NOTE: Ensure that this filename is transferred to the testing scripts for proper
 H5_OUPUT_FILENAME = "inception_v3_trained.h5"
   ```
   
- ### test.py: This is a procedural Python script that will test the performance of the model on the EASY dataset. This script will print the accuracy and predicted labels to the terminal and the predicted labels will also be stored in the PREDICTED_LABEL_OUTPUT_FILENAME file.
+ ### test.py: This is a procedural Python script that will test the performance of the model on the EASY dataset. This script will print the accuracy and predicted labels to the terminal and the predicted labels will also be stored in the PREDICTED_LABEL_OUTPUT_FILENAME file. To test this dataset please change the H5_INPUT_FILENAME to use the included pretrained H5 file (inception_v3_pretrained.h5).
 ```sh
 python test.py
   ```
@@ -147,7 +147,7 @@ PREDICTED_LABEL_OUTPUT_FILENAME = 'predicted_labels.npy'
 THRESHOLD = 0
   ```
   
-   ### hard_test.py: This is a procedural Python script that will test the performance of the model on the HARD dataset. This script will print the accuracy and predicted labels to the terminal and the predicted labels will also be stored in the PREDICTED_LABEL_OUTPUT_FILENAME file.
+   ### hard_test.py: This is a procedural Python script that will test the performance of the model on the HARD dataset. This script will print the accuracy and predicted labels to the terminal and the predicted labels will also be stored in the PREDICTED_LABEL_OUTPUT_FILENAME file. To test this dataset please change the H5_INPUT_FILENAME to use the included pretrained H5 file (inception_v3_pretrained.h5).
 To run the script use this command line
 ```sh
 python hard_test.py

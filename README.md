@@ -71,7 +71,7 @@ requirements.txt is included for easier importing of the required python package
 enviroment.yaml is included for easier importing of the conda env into your workspace
   
 ```sh
-conda env create -f enviroment.yml
+conda env create -f environment.yml
   ```
 ### Installation
 

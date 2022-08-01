@@ -101,6 +101,9 @@ python -m pip install numpy
   ```sh
 python -m pip install scikit-learn
   ```
+```sh
+python -m pip install pillow
+```
 <!-- USAGE EXAMPLES -->
 ## Usage
 

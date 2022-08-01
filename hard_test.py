@@ -11,7 +11,7 @@ from tensorflow.keras.applications.inception_v3 import InceptionV3
 #os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 IMPORT_DATA_FILENAME = 'data_train.npy'
 IMPORT_LABELS_FILENAME = 'labels_train.npy'
-H5_INPUT_FILENAME = 'inception_v3_trained.h5'
+H5_INPUT_FILENAME = 'inception_v3_pretrained.h5'
 PREDICTED_LABEL_OUTPUT_FILENAME = 'hard_predicted_labels.npy'
 THRESHOLD = 0.7071025020177562 
 # THRESHOLD was calculated using training data to determine the minimum single ...
